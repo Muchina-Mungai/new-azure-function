@@ -70,4 +70,4 @@ jobs:
           app-name: 'trappusopenai'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BC8F3850B77F47AA8A572C2A259AD37F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2FBAFF07AFCC4DFB96A17D11A1CAFC42 }}
