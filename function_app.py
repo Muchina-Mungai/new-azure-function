@@ -2,7 +2,6 @@ import azure.functions as func
 import logging
 
 app = func.FunctionApp()
-
 @app.route(route="openai_function",auth_level=func.Auth_Level.ANONYMOUS)
 def openai_function(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
