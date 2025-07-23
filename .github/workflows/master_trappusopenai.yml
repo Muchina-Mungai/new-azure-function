@@ -30,13 +30,11 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Create and start virtual environment
-        shell: bash
         run: |
           python -m venv venv
           source venv/bin/activate
 
       - name: Install dependencies
-        shell: bash
         run: pip install -r requirements.txt
 
       # Optional: Add step to run tests here
@@ -72,4 +70,4 @@ jobs:
           app-name: 'trappusopenai'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2FBAFF07AFCC4DFB96A17D11A1CAFC42 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_988DCF0F131247DC909562C8F7944508 }}
