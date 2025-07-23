@@ -25,3 +25,4 @@ def openai_function(req: func.HttpRequest) -> func.HttpResponse:
         )
         
         # //git@github.com:Git-hubTeam/trappus-openaiapp.git
+        

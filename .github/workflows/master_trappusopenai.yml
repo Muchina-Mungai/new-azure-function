@@ -30,11 +30,13 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Create and start virtual environment
+        shell: bash
         run: |
           python -m venv venv
           source venv/bin/activate
 
       - name: Install dependencies
+        shell: bash
         run: pip install -r requirements.txt
 
       # Optional: Add step to run tests here
